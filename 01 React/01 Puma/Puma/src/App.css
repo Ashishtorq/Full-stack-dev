@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 10px;
+    /* border: 1px solid; */
+    margin: auto;
+}

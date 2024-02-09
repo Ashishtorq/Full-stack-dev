@@ -1,0 +1,130 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* nav  bar  */
+.nav {
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav .logo {
+    width: 150px;
+    height: 43px;
+}
+
+.nav .mid {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 50px;
+    width: 23rem;
+    height: 10px;
+    /* box-sizing: border-box; */
+}
+
+.nav .mid .grey {
+    color: grey;
+}
+
+.airbnb-world-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bi-search::before {
+    content: "\f52a";
+    margin: -51px;
+    color: #c51433;
+}
+
+/* navbar 2 */
+.navbar2 {
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+}
+
+.navbar2 .navbar2-images {
+    width: 150px;
+}
+
+/* container */
+
+.container .card {
+    width: 270px;
+    height: 300px;
+    /* border: 1px solid; */
+    margin: 60px auto;
+
+}
+
+.container .card:hover {
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    /* border:1px solid black; */
+    box-shadow: 0px 5px 9px;
+}
+
+.container .card .house-image {
+    width: 100%;
+    height: 75%;
+    border-radius: 16px;
+    padding: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container .card .city-para {
+    margin-top: 6px;
+    margin-bottom: -14px;
+}
+
+.container .card .day-para {
+    margin-top: -17px;
+}
+
+.container {
+    width: 91vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 9px;
+}
+
+.container .card .text-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.text-rating .rating {
+    margin: 10px;
+}
+
+/* footer */
+
+.footer {
+    width: 100vw;
+    height: 50vh;
+    color: #fff;
+    background-color: black;
+    border-top: 1px solid gray;
+}
+
+.footer .foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer p {
+    text-align: center;
+    margin: bottom;
+    /* margin: 45px; */
+}                   

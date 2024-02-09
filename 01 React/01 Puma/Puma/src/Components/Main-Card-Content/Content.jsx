@@ -1,17 +1,20 @@
-import React, { Fragment } from 'react'
-import './Content.css'
+import React, { Fragment } from "react";
+import "./Content.css";
 const Content = () => {
   return (
     <Fragment>
-      <div className="card-container">
-        <div className="card">
-          <p>-50% OFF</p>
-          <img src="https://source.unsplash.com/1600x600/?puma-shoes" alt="" />
-          <h5>This is VIP Shoes</h5>
+      <div id="container">
+        <div id="card">
+          <p id="discount">-55%</p>
+          <img src="https://source.unsplash.com/200x200/?shoes" alt="shirt" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia vero
+            reprehenderit cupiditate.
+          </p>
         </div>
       </div>
     </Fragment>
   );
-}
+};
 
-export default Content
+export default Content;
