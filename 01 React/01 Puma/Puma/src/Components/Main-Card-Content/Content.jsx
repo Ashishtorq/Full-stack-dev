@@ -7,7 +7,7 @@ const Content = (prop) => {
       <div id="container">
         <div id="card">
           <p id="discount">{prop.discount}</p>
-          <img src={prop.img} alt="shirt" />
+          <img src="https://source.unsplash.com/300x400/?sunglasses" alt="shirt" />
           <p>
             Lorem ipsum dolor sit {prop.name}
           </p>

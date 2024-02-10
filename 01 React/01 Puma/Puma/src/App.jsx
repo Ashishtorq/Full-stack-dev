@@ -9,7 +9,25 @@ function App() {
     <Fragment>
       <Header></Header>
       <div className="container">
-        <Content
+      {
+        Data.map((ele)=>{
+          return <Content name={ele.name} discount={ele.id}/>
+        })
+      }
+      </div>
+      <Footer></Footer>
+    </Fragment>
+  );
+}
+
+export default App;
+
+
+
+
+{
+  /*
+  <Content
           name={Data[0].name}
           discount = {Data[0].id}
           img="https://source.unsplash.com/300x400/?shoes"
@@ -49,10 +67,5 @@ function App() {
           discount = {Data[7].id}
           img="https://source.unsplash.com/300x400/?laptop"
         ></Content>
-      </div>
-      <Footer></Footer>
-    </Fragment>
-  );
+*/
 }
-
-export default App;
