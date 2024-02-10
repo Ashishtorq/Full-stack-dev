@@ -3,7 +3,6 @@
     width: 298px;
     height: 500px;
     margin: 60px auto;
-    /* background: lavender; */
 }
 
 #containter #screen {
@@ -18,4 +17,19 @@
     text-align: center;
     margin: 40px;
     font-size: 54px;
+}
+
+#btn {
+    position: absolute;
+    left: 46%;
+}
+
+button {
+    padding: 10px;
+    width: 60px;
+    background: blanchedalmond;
+    font-size: larger;
+    border: navajowhite;
+    border-radius: 10px;
+    cursor: pointer;
 }
