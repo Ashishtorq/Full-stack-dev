@@ -1,0 +1,21 @@
+#containter {
+    border: 1px solid black;
+    width: 298px;
+    height: 500px;
+    margin: 60px auto;
+    /* background: lavender; */
+}
+
+#containter #screen {
+    width: 140px;
+    height: 140px;
+    border: 2px solid black;
+    margin: 114px auto;
+    border-radius: 83px;
+}
+
+#containter #screen h6 {
+    text-align: center;
+    margin: 40px;
+    font-size: 54px;
+}
