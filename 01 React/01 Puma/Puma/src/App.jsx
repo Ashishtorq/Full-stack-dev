@@ -67,5 +67,6 @@ export default App;
           discount = {Data[7].id}
           img="https://source.unsplash.com/300x400/?laptop"
         ></Content>
-*/
+
+
 }
