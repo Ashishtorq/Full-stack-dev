@@ -4,16 +4,26 @@ import { Fragment } from "react";
 import Data from "../Data.json";
 import { useState } from "react";
 const Product = () => {
-  const [Products, setProducts] = useState([]);
+  const [Products, setProducts] = useState(Data);
+  const filterHandler = ()=>{
+   const fil = Products.filter((e)=>{
+     return (
+        e.price > 30
+     );
+   })
+   console.log(fil)
+    setProducts(fil)
+  }
   return (
     <Fragment>
+    <button onClick={filterHandler} id="btn">Filter</button>
       <div id="container">
-        {Data.map((data) => {
+        {Products.map((product) => {
           return (
-            <div id="card" key={data.id}>
-              <img src={data.thumbnail} alt="thumbnail" />
-              <p>{data.title}</p>
-              <p>{data.price}</p>
+            <div id="card" key={product.id}>
+              <img src={product.thumbnail} alt="thumbnail" />
+              <p>{product.title}</p>
+              <p>{product.price}</p>
               <button>ADD</button>
             </div>
           );
