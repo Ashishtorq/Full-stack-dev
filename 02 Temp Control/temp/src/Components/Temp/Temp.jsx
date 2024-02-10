@@ -3,7 +3,8 @@ import "./Temp.css";
 const Temp = () => {
   const [temp, setTemp] = useState(5);
   const [color, setColor] = useState("#33495D");
-  const [btncolor, setbtncolor] = useState("blanchedalmond");
+  const [Btncolor, setBtncolor] = useState("blanchedalmond");
+  const [btncolor, setbtncolor] = useState("skyblue");
   
   const plus = () => {
     setTemp(temp + 1);
@@ -11,7 +12,7 @@ const Temp = () => {
         setColor("orangered")
     }
     if(temp >= 21){
-        setbtncolor("orangered");
+        setBtncolor("orangered");
     }
    
 
@@ -23,22 +24,31 @@ const Temp = () => {
         setColor("#33495D");
     }
     if(temp <= 22){
-        setbtncolor("#33495D");
+        setbtncolor("skyblue");
     }
   };
   return (
     <Fragment>
       <div id="containter">
-        <div id="screen" style={{backgroundColor:color}}>
-          <h6 style={{display:"flex", alignItems:"center",justifyContent:"center"}}>
+        <div id="screen" style={{ backgroundColor: color }}>
+          <h6
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             {temp} <span>°C</span>
           </h6>
         </div>
         <div id="btn">
-          <button onClick={plus} style={{ marginRight: "10px", backgroundColor:btncolor }}>
+          <button
+            onClick={plus}
+            style={{ marginRight: "10px", backgroundColor: Btncolor }}
+          >
             <i class="ri-add-box-line"></i>
           </button>
-          <button onClick={minus} style={{backgroundColor:btncolor}}>
+          <button onClick={minus} style={{ backgroundColor: btncolor }}>
             <i class="ri-subtract-fill"></i>
           </button>
         </div>
