@@ -1,16 +1,19 @@
 #containter {
-    border: 1px solid black;
+    border: 2px solid aliceblue;
     width: 298px;
     height: 500px;
     margin: 60px auto;
+    border-radius: 15px;
 }
 
 #containter #screen {
     width: 140px;
     height: 140px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     margin: 114px auto;
     border-radius: 83px;
+    color: wheat;
+    /* background-color: aquamarine; */
 }
 
 #containter #screen h6 {
