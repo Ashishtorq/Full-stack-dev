@@ -5,18 +5,28 @@ import Data from "../Data.json";
 import { useState } from "react";
 const Product = () => {
   const [Products, setProducts] = useState(Data);
-  const filterHandler = ()=>{
-   const fil = Products.filter((e)=>{
-     return (
-        e.price > 30
-     );
-   })
-   console.log(fil)
-    setProducts(fil)
+  const priceHandler = () => {
+    const fil = Products.filter((e) => {
+      return e.price > 100;
+    });
+    console.log(fil);
+    setProducts(fil);
+  };
+  const ratingHandler = ()=>{
+    const ratFil = Products.filter((e)=>{
+      e.rating > 3
+    })
+    console.log([ratFil]);
+    setProducts([ratFil]);
   }
   return (
     <Fragment>
-    <button onClick={filterHandler} id="btn">Filter</button>
+      <button onClick={priceHandler} id="btn">
+        Filter By Price
+      </button>
+      <button onClick={ratingHandler} id="btn2">
+        Top Rated
+      </button>
       <div id="container">
         {Products.map((product) => {
           return (
