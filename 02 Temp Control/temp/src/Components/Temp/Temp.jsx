@@ -1,10 +1,11 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./Temp.css";
 const Temp = () => {
   const [temp, setTemp] = useState(5);
   const [color, setColor] = useState("#33495D");
   const [Btncolor, setBtncolor] = useState("blanchedalmond");
   const [btncolor, setbtncolor] = useState("skyblue");
+  const [pro, setPro] = useState([])
   
   const plus = () => {
     setTemp(temp + 1);
@@ -27,6 +28,17 @@ const Temp = () => {
         setbtncolor("skyblue");
     }
   };
+  const api = async()=>{
+    const proInfo = await fetch("https://fakestoreapi.com/products");
+    const proData = await proInfo.json()
+    // console.log(proData)
+    setPro(proData)
+    console.log(pro)
+  }
+  useEffect(()=>{
+    api()
+  })
+
   return (
     <Fragment>
       <div id="containter">
@@ -53,6 +65,7 @@ const Temp = () => {
           </button>
         </div>
       </div>
+     
     </Fragment>
   );
 };
