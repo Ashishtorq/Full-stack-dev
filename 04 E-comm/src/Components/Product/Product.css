@@ -63,6 +63,7 @@ body {
     font-weight: 400;
     cursor: pointer;
 }
+
 #btn2 {
     background: black;
     color: white;
@@ -77,3 +78,8 @@ body {
     cursor: pointer;
 }
 
+#para {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+}

@@ -5,7 +5,7 @@ import Data from "../Data.json";
 import { useState } from "react";
 import { useEffect } from "react";
 const Product = () => {
-  const [Products, setProducts] = useState([]); 
+  const [Products, setProducts] = useState([]);
   const priceHandler = () => {
     const fil = Products.filter((e) => {
       return e.price > 100;
@@ -18,7 +18,7 @@ const Product = () => {
       return e.rating.rate > 3;
     });
     console.log(ratFil);
-    setProducts(ratFil);// ratfil ko array m rkha tha
+    setProducts(ratFil); // ratfil ko array m rkha tha
   };
   const api = async () => {
     const proInfo = await fetch("https://fakestoreapi.com/products");
@@ -28,7 +28,7 @@ const Product = () => {
   };
   useEffect(() => {
     api();
-  },[]);
+  }, []);
   return (
     <Fragment>
       <button onClick={priceHandler} id="btn">
@@ -42,7 +42,7 @@ const Product = () => {
           return (
             <div id="card" key={product.id}>
               <img src={product.image} alt="thumbnail" />
-              <p>{product.title}</p>
+              <p id="para">{product.title}</p>
               <p>{product.price}</p>
               <button>ADD</button>
             </div>
