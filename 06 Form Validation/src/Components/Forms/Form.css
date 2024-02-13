@@ -1,0 +1,14 @@
+#form #in {
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    border: navajowhite;
+    border-radius: 5px;
+}
+#sub {
+    padding: 10px;
+    width: 40%;
+    border: navajowhite;
+    border-radius: 6px;
+    cursor: pointer;
+}

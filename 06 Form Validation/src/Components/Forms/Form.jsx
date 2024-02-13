@@ -16,10 +16,11 @@ const Form = () => {
   } 
   return (
     <Fragment>
-      <form action="">
-        <input type="text" placeholder="Enter Name"  name={name} onChange={handler}/>
-        <input type="Email" placeholder="Enter Email"   name={email} onChange={handler}/>
-        <input type="password" placeholder="Enter Password" name={pass}   onChange={handler}/>
+      <form action="" id="form">
+        <input type="text" id="in" placeholder="Enter Name"  name={name} onChange={handler}/> <br /> <br />
+        <input type="Email" id="in" placeholder="Enter Email"   name={email} onChange={handler}/> <br /> <br />
+        <input type="password" id="in" placeholder="Enter Password" name={pass}   onChange={handler}/><br /> <br />
+        <input type="submit" placeholder="Click here" id="sub"/>
       </form>
     </Fragment>
   );
