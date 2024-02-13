@@ -11,12 +11,7 @@ const Form = () => {
   };
   const [user, setUser] = useState(userData);
   const handler = (e) => {
-    // e.preventDefault();
-    // console.log(e.target.value);
-    // console.log(e.target.name);
     setUser({ ...user, [e.target.name]: e.target.value });
-    // setUser(e.target.value)
-    console.log(setUser);
   };
   return (
     <Fragment>
