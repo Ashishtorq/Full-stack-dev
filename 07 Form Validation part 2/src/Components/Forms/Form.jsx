@@ -13,10 +13,15 @@ const Form = () => {
   const handler = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+  const submitHandler = (e) => {
+    e.preventDefault()
+    console.log(e.target.value);
+    // console.log("Submit");
+  };
   return (
     <Fragment>
-    <div id="form-group">
-    <p>{user.username} has registered successfully</p>
+      <form action="" onSubmit={submitHandler} id="form-group">
+        <p>{user.username} has registered successfully</p>
         <img src={img} alt="" />
         <input
           type="text"
@@ -59,8 +64,8 @@ const Form = () => {
           name="passwordCNF"
         />
         <br /> <br />
-        <button type="submit"> Sign Up</button>
-      </div>
+        <input type="submit" onSubmit={submitHandler} id="btn" />
+      </form>
     </Fragment>
   );
 };

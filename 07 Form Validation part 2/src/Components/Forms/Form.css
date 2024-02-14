@@ -17,7 +17,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid grey; */
+    border: 1px solid grey;
     text-align: center;
     padding: 18px 51px;
     border-radius: 10px;
@@ -31,7 +31,7 @@ input {
     text-align: center;
 }
 
-button {
+#btn {
     width: 10rem;
     height: 2.5rem;
     background: #0164CF;
