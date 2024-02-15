@@ -10,18 +10,19 @@ const Form = () => {
     passwordCNF: "",
   };
   const [user, setUser] = useState(userData);
+  const [error, setError] = useState({})
   const handler = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
   const submitHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log(e.target.value);
-    // console.log("Submit");
+    
   };
   return (
     <Fragment>
       <form action="" onSubmit={submitHandler} id="form-group">
-        <p>{user.username} has registered successfully</p>
+        <p>{user.username}</p>
         <img src={img} alt="" />
         <input
           type="text"
