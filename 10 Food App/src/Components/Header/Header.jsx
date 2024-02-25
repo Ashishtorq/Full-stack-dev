@@ -19,7 +19,7 @@ const Header = () => {
           </ul>
         </div>
         <div id="cart">
-          <span id="menu">
+          <span id="hamburger">
             {" "}
             <GiHamburgerMenu />
           </span>
